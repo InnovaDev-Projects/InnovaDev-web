@@ -1,0 +1,57 @@
+---
+import logo from "../assets/innovadev.jpg";
+---
+
+<section class="flex items-center justify-center px-10 py-16">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="text-center lg:text-left">
+                <h1 class="text-4xl lg:text-5xl font-bold mb-6">
+                    <span
+                        class="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent"
+                    >
+                        Innovadev
+                    </span>
+                </h1>
+
+                <!-- Descripción -->
+                <p class="text-xl text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0">
+                    Transformamos tus ideas en soluciones digitales innovadoras.
+                    Desde desarrollo web personalizado hasta aplicaciones
+                    móviles de vanguardia, creamos experiencias tecnológicas que
+                    impulsan el crecimiento de tu negocio.
+                </p>
+
+                <!-- Botones de Acción -->
+                <div
+                    class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+                >
+                    <button class="bg-white text-black px-8 py-4 rounded-full font-medium border border-gray-200 hover:shadow-lg transition-all duration-300">
+                        Comenzar Proyecto
+                    </button>
+                </div>
+            </div>
+
+            <!-- Logo/Imagen -->
+            <div class="flex justify-center lg:justify-end">
+                <div class="relative">
+                    <img
+                        src={logo.src}
+                        alt="Innovadev Logo"
+                        class="w-64 h-64 lg:w-80 lg:h-80 rounded-full object-cover border-4 shadow-purple-500 shadow-2xl"
+                    />
+                    <!-- Elementos decorativos -->
+                    <div
+                        class="absolute -top-4 -right-4 w-20 h-20 bg-purple-900 rounded-full opacity-20 animate-pulse"
+                    >
+                    </div>
+                    <div
+                        class="absolute -bottom-6 -left-6 w-16 h-16 bg-purple-900 rounded-full opacity-30 animate-pulse"
+                        style="animation-delay: 1s;"
+                    >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
