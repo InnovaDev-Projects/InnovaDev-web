@@ -1,5 +1,4 @@
 ---
-import Layout from "../layouts/Layout.astro";
 const { text } = Astro.props;
 ---
 
@@ -10,23 +9,17 @@ const { text } = Astro.props;
     {text}
 </button>
 
-<script>
-    function openGmail(): void {
-        const email: string = "innova.contact@gmail.com";
-        const subject: string = "Solicitud de Cotización";
-        const body: string = "Hola, me interesa solicitar una cotización para:";
+<script is:inline>
+    const btn = document.getElementById("gmail-button");
+    function openGmail() {
+        const email = "innova.contact@gmail.com";
+        const subject = "Solicitud de Cotización";
+        const body = "Hola, me interesa solicitar una cotización para:";
 
         // URL para Gmail web
-        const gmailUrl: string = `https://mail.google.com/mail/?view=cm&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
         window.open(gmailUrl, "_blank");
     }
-
-    document.addEventListener("DOMContentLoaded", () => {
-        const button: HTMLElement | null =
-            document.getElementById("gmail-button");
-        if (button) {
-            button.addEventListener("click", openGmail);
-        }
-    });
+    btn?.addEventListener("click", openGmail);
 </script>
