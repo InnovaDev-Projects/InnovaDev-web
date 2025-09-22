@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro";
+const { text } = Astro.props;
+---
+
+<button
+    class="bg-purple-600 px-8 py-4 rounded-full font-semibold transition-colors duration-300"
+    id="gmail-button"
+>
+    {text}
+</button>
+
+<script>
+    function openGmail(): void {
+        const email: string = "innova.contact@gmail.com";
+        const subject: string = "Solicitud de Cotización";
+        const body: string = "Hola, me interesa solicitar una cotización para:";
+
+        // URL para Gmail web
+        const gmailUrl: string = `https://mail.google.com/mail/?view=cm&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        window.open(gmailUrl, "_blank");
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const button: HTMLElement | null =
+            document.getElementById("gmail-button");
+        if (button) {
+            button.addEventListener("click", openGmail);
+        }
+    });
+</script>

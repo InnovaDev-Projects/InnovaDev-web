@@ -1,0 +1,332 @@
+---
+import GmailButton from "../components/GmailButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <section class="py-20 bg-white" id="servicios">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Header de la sección -->
+            <div class="text-center mb-16">
+                <div
+                    class="inline-flex items-center bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm mb-6 font-medium"
+                >
+                    <div
+                        class="w-2 h-2 bg-purple-500 rounded-full mr-2 animate-pulse"
+                    >
+                    </div>
+                    Nuestros Servicios
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+                    <span
+                        class="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent"
+                    >
+                        Soluciones Digitales
+                    </span>
+                    <span class="text-gray-900 block"> Para Tu Negocio </span>
+                </h2>
+                <p
+                    class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+                >
+                    Desde sitios web impactantes hasta automatizaciones
+                    inteligentes, creamos las herramientas digitales que tu
+                    empresa necesita para crecer.
+                </p>
+            </div>
+
+            <!-- Grid de servicios -->
+            <div class="grid lg:grid-cols-3 gap-8 mb-16">
+                <!-- Diseño Web -->
+                <div
+                    class="group relative bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 border border-purple-100 hover:border-purple-200"
+                >
+                    <div class="absolute top-4 right-4">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                        >
+                            <svg
+                                class="w-6 h-6 text-white"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-4l-2 2-2-2H5a2 2 0 01-2-2V5zm5.5 6a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm2.45 4a2.5 2.5 0 10-4.9 0h4.9zM12 9a1 1 0 100-2 1 1 0 000 2z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <h3
+                        class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-purple-600 transition-colors"
+                    >
+                        Diseño Web
+                    </h3>
+
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Creamos sitios web modernos, responsivos y optimizados
+                        para SEO que reflejan la personalidad de tu marca y
+                        convierten visitantes en clientes.
+                    </p>
+
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-700">
+                            <div
+                                class="w-2 h-2 bg-purple-500 rounded-full mr-3"
+                            >
+                            </div>
+                            Diseño responsive y moderno
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <div
+                                class="w-2 h-2 bg-purple-500 rounded-full mr-3"
+                            >
+                            </div>
+                            Optimización para buscadores (SEO)
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <div
+                                class="w-2 h-2 bg-purple-500 rounded-full mr-3"
+                            >
+                            </div>
+                            Velocidad de carga optimizada
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <div
+                                class="w-2 h-2 bg-purple-500 rounded-full mr-3"
+                            >
+                            </div>
+                            Sistema de gestión de contenido
+                        </li>
+                    </ul>
+
+                    <div class="text-right">
+                        <!-- <span
+                            class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent"
+                        >
+                            Desde $800
+                        </span> -->
+                    </div>
+                </div>
+
+                <!-- Landing Pages -->
+                <div
+                    class="group relative bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 border border-blue-100 hover:border-blue-200"
+                >
+                    <div class="absolute top-4 right-4">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                        >
+                            <svg
+                                class="w-6 h-6 text-white"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                            >
+                                <path
+                                    d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"
+                                ></path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <h3
+                        class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors"
+                    >
+                        Landing Pages
+                    </h3>
+
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Páginas de aterrizaje diseñadas específicamente para
+                        convertir. Perfectas para campañas publicitarias y
+                        generación de leads.
+                    </p>
+
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-700">
+                            <div class="w-2 h-2 bg-blue-500 rounded-full mr-3">
+                            </div>
+                            Optimización para conversiones
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <div class="w-2 h-2 bg-blue-500 rounded-full mr-3">
+                            </div>
+                            A/B Testing incluido
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <div class="w-2 h-2 bg-blue-500 rounded-full mr-3">
+                            </div>
+                            Integración con herramientas de marketing
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <div class="w-2 h-2 bg-blue-500 rounded-full mr-3">
+                            </div>
+                            Analytics y seguimiento avanzado
+                        </li>
+                    </ul>
+
+                    <div class="text-right">
+                        <!-- <span
+                            class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent"
+                        >
+                            Desde $400
+                        </span> -->
+                    </div>
+                </div>
+
+                <!-- Automatizaciones -->
+                <div
+                    class="group relative bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 border border-emerald-100 hover:border-emerald-200"
+                >
+                    <div class="absolute top-4 right-4">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                        >
+                            <svg
+                                class="w-6 h-6 text-white"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <h3
+                        class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-emerald-600 transition-colors"
+                    >
+                        Automatizaciones
+                    </h3>
+
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Automatiza procesos repetitivos y ahorra tiempo valioso.
+                        Desde formularios inteligentes hasta integraciones
+                        complejas.
+                    </p>
+
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-700">
+                            <div
+                                class="w-2 h-2 bg-emerald-500 rounded-full mr-3"
+                            >
+                            </div>
+                            Integración con APIs externas
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <div
+                                class="w-2 h-2 bg-emerald-500 rounded-full mr-3"
+                            >
+                            </div>
+                            Automatización de emails
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <div
+                                class="w-2 h-2 bg-emerald-500 rounded-full mr-3"
+                            >
+                            </div>
+                            Workflows personalizados
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <div
+                                class="w-2 h-2 bg-emerald-500 rounded-full mr-3"
+                            >
+                            </div>
+                            Dashboards y reportes automáticos
+                        </li>
+                    </ul>
+
+                    <div class="text-right">
+                        <!-- <span
+                            class="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent"
+                        >
+                            Desde $600
+                        </span> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div
+                class="bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl p-8 text-center text-white"
+            >
+                <h3 class="text-2xl lg:text-3xl font-bold mb-4">
+                    ¿Necesitas una solución personalizada?
+                </h3>
+                <p class="text-lg mb-8 max-w-2xl mx-auto">
+                    Cada negocio es único. Hablemos sobre cómo podemos crear la
+                    solución digital perfecta para tus necesidades específicas.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <GmailButton text="Solicitar Cotización"/>
+                    <!-- <button
+                        class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition-all duration-300"
+                    >
+                        Ver Ejemplos
+                    </button> -->
+                </div>
+            </div>
+
+            <!-- Proceso de trabajo -->
+            <div class="mt-20 text-center">
+                <h3 class="text-3xl font-bold text-gray-900 mb-12">
+                    Nuestro Proceso
+                </h3>
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="relative">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl"
+                        >
+                            1
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">
+                            Análisis
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                            Entendemos tus necesidades y objetivos
+                        </p>
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl"
+                        >
+                            2
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Diseño</h4>
+                        <p class="text-gray-600 text-sm">
+                            Creamos prototipos y wireframes detallados
+                        </p>
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-r from-indigo-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl"
+                        >
+                            3
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">
+                            Desarrollo
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                            Programamos con las mejores tecnologías
+                        </p>
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl"
+                        >
+                            4
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">
+                            Lanzamiento
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                            Implementamos y brindamos soporte continuo
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
+
